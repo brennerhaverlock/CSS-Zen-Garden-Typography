@@ -8,6 +8,9 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 
+/* Webfonts */
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Alegreya:400,400i,900i&display=swap');
+
 /* basic elements */
 html {
 	margin: 0;
@@ -192,46 +195,175 @@ footer a:link, footer a:visited {
 	width: 148px; 
 	height: 110px;
 	}
+ /* Cards */
 
-	footer > a {
-		display: block;
-		border: 1px solid;
-		flex: 1;
-		height: 200px;
-		margin: 10px;
-		box-shadow: 0 0 12px rgba(0, 0, 0, 0.392);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 48px;
-		text-decoration: none;
-	}
+ footer > a {
+	display: block;
+	border: 1px solid;
+	flex: 1;
+	height: 200px;
+	margin: 10px;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.392);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	text-decoration: none;
+}
+/* Arrange all of the footer "Cards" in a row with flex. */
+footer {
+	display: flex;
+	justify-content: space-around;
+}
 
-	footer {
-		display: flex;
-		justify-content: space-around;
-	}
+/* Turn each list item in Select a Design into a card */
+/* First style both anchors: */
 
-	.design-selection ul > li {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		border: 1px solid;
-		padding: 10px;
-		font-size: 40px;
-		margin: 5px;
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.317);
-	}
+.design-selection ul > li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid;
+	padding: 10px;
+	font-size: 40px;
+	margin: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.317);
+}
 
-	.design-selection ul > li > a {
-		font-size: 1rem;
-		text-decoration: none;
-		margin-bottom: 1em;
-		height: 3em;
-	}
+.design-selection ul > li > a {
+	font-size: 1rem;
+	text-decoration: none;
+	margin-bottom: 1em;
+	height: 3em;
+}
+/* Turn the Resources section into a Card */
+.zen-resources {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid;
+	width: 200px;
+}
+/* Next, add a header to the card. */
 
-	.design-selection ul > li > a:last-child {
-		align-self: flex-end;
-		margin-top: 1em;
-		margin-bottom: 0;
-	}
+
+.zen-resources h3 {
+	margin: 0;
+	text-align: center;
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: #000;
+	color: #fff;
+}
+/* Now style the list. Notice I remove the bullet points from the ul. */
+
+
+.zen-resources ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+}
+/* Last style the anchors. */
+
+
+.zen-resources a {
+	text-decoration: none;
+	padding: 0.25em 1em;
+	display: block;
+}
+
+
+/* Making three cards for: div.explanation,
+ div.participation, and div.benfits. 
+ You can arrange these in a row using flex. */
+
+ .explanation, .participation {
+	width: 80%;
+	box-sizing: border-box;
+  }
+  
+  .explanation {
+	background-color: whitesmoke;
+	float: left;
+	padding: 4em 10% 4em 8%;
+  }
+
+  .explanation h3, .participation h3 {
+	margin: 0 auto .62em;
+  }
+  
+  .explanation p, .participation p {
+	margin: 0 auto;
+  }
+
+  .explanation h3, .participation h3, .preamble h3, .requirements h3, .benefits h3 {
+    max-width: 27.5rem;
+  }
+
+  .explanation p, .participation p, .preamble p, .requirements p, .benefits p {
+     max-width: 27.5rem;
+  }
+
+  .explanation, .participation {
+    width: 100%;
+  }
+
+  .explanation h3, .explanation p, .participation h3, .participation p {
+    width: 34rem;
+  }
+
+  .preamble, .requirements {
+	background: rgb(34, 34, 46);
+	padding: 4em 6%;
+  }
+
+  .preamble h3, .requirements h3 {
+	max-width: 34rem;
+	margin: 0 auto .62em;
+  }
+  
+  .preamble p, .requirements p {
+	 max-width: 34rem;
+	margin: 0 auto;
+	color: #f6f4ec;
+  }
+
+  .participation {
+	display: inline-block;
+	padding: 4em 8% 4em 10%;
+	background: #9bc152;
+  }
+
+  .participation a:hover {
+	color:#f6f4ec;
+	border: 1px solid #f6f4ec;
+  }
+  
+  .participation p:last-of-type a:nth-of-type(1), .participation p:last-of-type a:nth-of-type(2) {
+	 font-family: 'Alegreya SC', Verdana, Tahoma, serif;
+	text-transform: lowercase;
+  }
+
+  .explanation, .participation {
+    width: 100%;
+  }
+
+  .benefits {
+	background: #1b1b21;
+	padding: 4em 6%;
+  }
+
+  .benefits h3 {
+	max-width: 34rem;
+	margin: 0 auto .62em;
+	color: #8b8d9b;
+  }
+
+  .benefits p {
+	max-width: 34rem;
+	margin: 0 auto;
+	color: #6d6f81;
+  }
+  
+
+
