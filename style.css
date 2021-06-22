@@ -283,7 +283,7 @@ footer {
   }
   
   .explanation {
-	background-color: whitesmoke;
+	background-color: #BDADEA;
 	float: left;
 	padding: 4em 10% 4em 8%;
   }
@@ -313,7 +313,7 @@ footer {
   }
 
   .preamble, .requirements {
-	background: rgb(34, 34, 46);
+	background:#4E4B5C;
 	padding: 4em 6%;
   }
 
@@ -331,7 +331,7 @@ footer {
   .participation {
 	display: inline-block;
 	padding: 4em 8% 4em 10%;
-	background: #9bc152;
+	background: #BEA2C2;
   }
 
   .participation a:hover {
@@ -349,7 +349,7 @@ footer {
   }
 
   .benefits {
-	background: #1b1b21;
+	background: #A37871;
 	padding: 4em 6%;
   }
 
